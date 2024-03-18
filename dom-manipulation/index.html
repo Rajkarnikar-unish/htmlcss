@@ -8,62 +8,44 @@
         body {
             background-color: rgba(0, 0, 0, 0.816);
         }
-        .container {
-            display: flex;
+        #sports {
+            width: auto;
+            display: block;
             align-items: center;
             justify-content: center;
             color: white;
-            margin: 40px 20px;
-            font-family: Arial;
-        }
-
-        #main-heading {
-            text-align: center;
-            font-size: 2.75rem;
-            color: white;
-            font-family: Arial;
-        }
-
-        .boxes {
-            height: 300px;
-            border: 1px solid #FFFFFF;
-            border-radius: 10px;
-            display: flex;
-            margin: 0px 15px;
+            margin: 40px 200px;
+            border: 3px solid #fff;
+            padding: 5px 10px;
             align-items: center;
             text-align: center;
-            justify-content: space-between;
-        }
-
-        button {
-            border: 1px solid #FFFFFF;
+            font-family: Arial;
             border-radius: 10px;
-            background-color: transparent;
-            width: 70px;
-            height: 50px;
-            color: white;
-            font-size: 20px;
         }
 
-        .reveal-btn {
-            height: 300px;
+        li {
             width: auto;
-            padding: 0px 30px;
+            font-size: 30px;
+            border: 1px solid #fff;
+            margin: 10px 0px;
         }
 
-        .hidden-content {
-            display: none;
+        li:hover {
+            cursor: pointer;
         }
-
-        /* .hidden-content.reveal-btn {
-            display: block;
-        } */
-
     </style>
 </head>
 <body>
 
-    <h1 id="main-heading">Event Listeners</h1>
+    <ul id="sports" type="none">
+        <li id="football">Football</li>
+        <li id="basketball">Basketball</li>
+        <li id="boxing">Boxing</li>
+        <li id="tennis">Tennis</li>
+        <li id="golf">Golf</li>
+    </ul>
+
+    <!-- <h1 id="main-heading">Event Listeners</h1>
 
     <div class="container">
         <button class="reveal-btn boxes">Reveal More</button>
@@ -71,7 +53,7 @@
         <div class="hiddent-content boxes">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nobis sapiente cum earum suscipit at illum blanditiis, dolore, dolorem, odio vitae laborum cupiditate ducimus ipsum error dolores et animi. Eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iusto inventore odio dolore magni porro accusantium magnam voluptates molestiae maiores voluptas eos harum, at impedit ea aspernatur in aliquid recusandae!
         </div>
-    </div>
+    </div> --> 
 
     <!-- <div class="container">
         <div class="boxes box-1">
