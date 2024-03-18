@@ -9,47 +9,84 @@
             background-color: rgba(0, 0, 0, 0.816);
         }
         .container {
-            display: block;
+            display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            border: 1px solid #FFFFFF;
-            margin: 40px ;
-            border-radius: 10px;
+            margin: 40px 20px;
             font-family: Arial;
         }
 
         #main-heading {
             text-align: center;
             font-size: 2.75rem;
+            color: white;
+            font-family: Arial;
         }
 
-        ul {
-            margin-right: 60px;
-        }
-
-        .list-items {
-            background-color: #DDDDDD;
-            margin: 10px 0px 10px 20px;
-            font-size: 2rem;
-            color: #1d1d1d;
+        .boxes {
+            height: 300px;
+            border: 1px solid #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            margin: 0px 15px;
+            align-items: center;
             text-align: center;
+            justify-content: space-between;
         }
+
+        button {
+            border: 1px solid #FFFFFF;
+            border-radius: 10px;
+            background-color: transparent;
+            width: 70px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .reveal-btn {
+            height: 300px;
+            width: auto;
+            padding: 0px 30px;
+        }
+
+        .hidden-content {
+            display: none;
+        }
+
+        /* .hidden-content.reveal-btn {
+            display: block;
+        } */
+
     </style>
 </head>
 <body>
+
+    <h1 id="main-heading">Event Listeners</h1>
+
     <div class="container">
-        <h1 id="main-heading">Favorite Movie Franchise</h1>
-        <ul type="none">
-            <li class="list-items">
-                <span>Neo</span> 
-                The Matrix</li>
-            <li class="list-items">Star Wars</li>
-            <li class="list-items">Harry Potter</li>
-            <li class="list-items">Lord of the Rings</li>
-            <li class="list-items">Marvel</li>
-        </ul>
+        <button class="reveal-btn boxes">Reveal More</button>
+
+        <div class="hiddent-content boxes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nobis sapiente cum earum suscipit at illum blanditiis, dolore, dolorem, odio vitae laborum cupiditate ducimus ipsum error dolores et animi. Eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iusto inventore odio dolore magni porro accusantium magnam voluptates molestiae maiores voluptas eos harum, at impedit ea aspernatur in aliquid recusandae!
+        </div>
     </div>
+
+    <!-- <div class="container">
+        <div class="boxes box-1">
+            <h1 id="heading">Example 1</h1>
+            <button class="btn-1" onclick="alert('This is cool')">Enter</button>
+        </div>
+        <div class="boxes box-2">
+            <h1 id="heading">Example 2</h1>
+            <button class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box-3">
+            <h1 id="heading">Example 3</h1>
+            <button class="btn-3">Enter</button>
+        </div>
+    </div> -->
 
     <script src="app.js"></script>
     
