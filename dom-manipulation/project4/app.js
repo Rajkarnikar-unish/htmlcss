@@ -73,4 +73,8 @@ resetBtn.addEventListener('click', function () {
     minutes = 0;
 
     document.getElementById('timer').innerHTML = "00:00:00";
+
+    if (timerStatus === "started") {
+        document.getElementById('startStopBtn').innerHTML = `<i class="fa fa-solid fa-play" id="play"></i>`;
+    }
 });
